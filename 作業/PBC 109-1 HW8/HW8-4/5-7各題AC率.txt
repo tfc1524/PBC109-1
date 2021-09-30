@@ -1,0 +1,19 @@
+pbm1_acratio = [pbm_acratio[k][0] for k in range(5, 8)]
+pbm2_acratio = [pbm_acratio[k][1] for k in range(5, 8)]
+pbm3_acratio = [pbm_acratio[k][2] for k in range(5, 8)]
+
+width = 0.25
+x1 = [5, 6, 7]
+x2 = [p + width for p in x1]
+x3 = [p + 2 * width for p in x1]
+plt.bar(x1, pbm1_acratio, color='tab:green', width=0.25, label='Problem 1', alpha=0.7)
+plt.bar(x2, pbm2_acratio, color='tab:orange', width=0.25, label='Problem 2', alpha=0.7)
+plt.bar(x3, pbm3_acratio, color='tab:olive', width=0.25, label='Problem 3', alpha=0.7)
+plt.legend(loc='upper right')
+plt.xlabel('Challenges')
+plt.ylabel('AC Rate')
+plt.title('AC Rate(Challenge 5~7)')
+plt.ylim(0, 0.7)
+plt.yticks(np.arange(0, 0.75, 0.05))
+plt.xticks([p + width for p in x1], x1)
+plt.show()

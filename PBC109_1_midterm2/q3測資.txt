@@ -1,0 +1,9 @@
+C:\Users\jack\business_program\PBC109_1_midterm2\midterm2_q3_sample1.txt
+
+
+‪C:\Users\jack\business_program\PBC109_1_midterm2\midterm2_q3_sample2.txt
+
+TYPE
+MAXLEN
+MAXNUMLEN
+MAXDECPLACE

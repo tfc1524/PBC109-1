@@ -1,0 +1,15 @@
+clg5_actimes = pbm_actimes[5]
+clg6_actimes = pbm_actimes[6]
+clg7_actimes = pbm_actimes[7]
+
+plt.plot(range(1, 4), clg5_actimes, color='tabblue', marker = 'o', label='Challenge 5', alpha=0.7)
+plt.plot(range(1, 4), clg6_actimes, color='taborange', marker = 'o', label='Challenge 6', alpha=0.7)
+plt.plot(range(1, 4), clg7_actimes, color='tabolive', marker = 'o', label='Challenge 7', alpha=0.7)
+plt.xlabel('Problems')
+plt.ylabel('Accepted Times')
+plt.title('Total AC of each challenge(5-7)')
+plt.ylim(200, 1500)
+plt.yticks(np.arange(200, 1600, 100))
+plt.xticks(range(1, 4, 1))
+plt.legend(loc='upper right')
+plt.show()
